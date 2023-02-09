@@ -1,13 +1,125 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=VT323&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  font-family: "VT323", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.credentials {
+  font-size: 30px;
+  color: green;
+  font-family: "VT323", monospace;
+  background-color: #1d1d1d;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.username {
+  background-color: red;
+  width: 20%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+.password {
+  background-color: red;
+  width: 20%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+.login {
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  background-color: green;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+}
+.encryptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100vw;
+  height: 40vh;
+  background-color: #fff;
+}
+.decryptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 60vh;
+  background-color: #fff;
+}
+.encryptInput {
+  background-color: red;
+  width: 30%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+.decryptInput {
+  background-color: red;
+  width: 30%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+.encryptedResult {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  font-size: 30px;
+  color: rgb(226, 39, 39);
+}
+.decryptedResult {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 10%;
+  font-size: 30px;
+  color: rgb(226, 39, 39);
+}
+.agentIcon {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  background: url("./assets/man-in-suit-and-tie.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.agentIconDecrypt {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  /* margin-bottom: 10px; */
+  background: url("./assets/kgb-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+button {
+  width: 15%;
+  height: 40px;
+  cursor: pointer;
 }
